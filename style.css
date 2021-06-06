@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --color-purple: hsl(263, 55%, 52%);
+  --color-light-purple: hsl(262, 75%, 80%);
+  --color-darken-purple: hsl(267, 55%, 64%);
+  --color-gray: hsl(220, 15.6%, 69.8%);
+  --color-dark-gray: hsl(217, 19%, 35%);
+  --color-dark-gray-text: hsl(212, 9%, 32.7%);
+  --color-light-gray-text: hsl(203, 4.2%, 62.7%);
+  --color-white: hsl(0, 0%, 95%);
+  --color-dark-blue: hsl(219, 29%, 14%);
+}
+
+body {
+  background: hsl(213, 44%, 95.1%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 25vh auto 0;
+}
+
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.grid-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.8rem;
+  color: #fff;
+  box-shadow: 40px 60px 50px -47px rgb(72 85 106 / 25%);
+}
+
+.card-wide {
+  grid-column-end: span 2;
+}
+
+.card-vertical-grow {
+  grid-row-end: span 2;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar {
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+}
+
+h3 {
+  letter-spacing: 0.3px;
+}
+
+.quote {
+  font-size: 13px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.name {
+  font-size: 14px;
+}
+
+.role {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid-items {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .card-wide,
+  .card-vertical-grow {
+    grid-column: initial;
+    grid-row: initial;
+  }
+}
+
+/* Purple card */
+
+.grid-purple {
+  background: url(images/bg-pattern-quotation.svg) no-repeat, var(--color-purple);
+  background-position-x: 80%;
+  color: var(--color-light-purple);
+}
+.grid-purple .profile-avatar {
+  border-color: var(--color-darken-purple);
+}
+.grid-purple h3,
+.grid-purple .name {
+  color: var(--color-white);
+}
+
+/* Gray card */
+
+.grid-gray {
+  background: var(--color-dark-gray);
+  color: var(--color-gray);
+}
+.grid-gray .profile-avatar {
+  border-color: var(--color-dark-gray);
+}
+.grid-gray h3,
+.grid-gray .name {
+  color: var(--color-white);
+}
+
+/* White card */
+
+.card-white {
+  color: var(--color-light-gray-text);
+}
+.card-white h3,
+.card-white .name {
+  color: var(--color-dark-gray-text);
+}
+
+/* Dark card */
+
+.grid-dark {
+  background: var(--color-dark-blue);
+  color: var(--color-gray);
+}
+.grid-dark .profile-avatar {
+  border-color: var(--color-darken-purple);
+}
+.grid-dark h3,
+.grid-dark .name {
+  color: var(--color-white);
+}
