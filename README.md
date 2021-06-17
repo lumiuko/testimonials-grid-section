@@ -54,4 +54,4 @@ Building responsive cards layout with CSS Grid
 ## Author
 
 - Frontend Mentor - [@flxemt](https://www.frontendmentor.io/profile/flxemt)
-- Twitter - [@flx_emt](https://twitter.com/flx_emt)
+- Twitter - [@flxemt](https://twitter.com/flxemt)
