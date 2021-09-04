@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/testimonials-solution-using-css-grid-wGa5Mwn8B)
-- Live Site URL: [Add live site URL here](https://flxemt.github.io/testimonials-grid-section)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/testimonials-solution-using-css-grid-wGa5Mwn8B)
+- Live Site URL: [Link](https://flxemt.github.io/testimonials-grid-section)
 
 ## My process
 
